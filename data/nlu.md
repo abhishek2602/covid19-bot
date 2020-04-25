@@ -29,10 +29,10 @@
 ## intent:examined
 - examined without protection
 
-## intent:diabets
+## intent:diabetes
 - I have diabetes
 
-## intent:hypertention
+## intent:hypertension
 - I have hypertension
 
 ## intent:lung_disease

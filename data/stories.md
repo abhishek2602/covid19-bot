@@ -29,3 +29,15 @@
 ## bot challenge
 * bot_challenge
   - utter_iamabot
+
+## corona test safe
+* corona_test
+  - utter_symptoms
+* deny
+  - utter_had_any
+* deny
+  - utter_travel_14
+* deny
+  - utter_apply
+* deny
+  - utter_low_risk
