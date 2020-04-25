@@ -12,6 +12,60 @@
 - see you around
 - see you later
 
+## intent:fever
+- fever
+- high fever
+
+## intent:cough
+- cough
+
+## intent:shortness_of_breath
+- shortness of breath
+- problem breathing
+
+## intent:interacted
+- I interacted with corona patient recently
+
+## intent:examined
+- examined without protection
+
+## intent:diabets
+- I have diabetes
+
+## intent:hypertention
+- I have hypertension
+
+## intent:lung_disease
+- I have lung disease
+
+## intent:heart_disease
+- I have a problem of heart disease
+
+## intent:corona_test
+- I want to take a corona test
+- wanna test myself for cornona virus
+- I have a doubt that I have cornona virus
+- how can I check if I am suffering from corona virus or not
+
+## intent:corona_state
+- [india](state)
+- [karnataka](state)
+- [bihar](state)
+- [goa](state)
+- [punjab](state)
+- [delhi](state)
+- [chandigarh](state)
+- [assam](state)
+- [odisha](state)
+- [west bengal](state)
+- [andra pradesh](state)
+- [tamil nadu](state)
+- [kerala](state)
+- [rajasthan](state)
+
+## synonym:total
+- india
+
 ## intent:affirm
 - yes
 - indeed
