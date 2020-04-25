@@ -41,3 +41,7 @@
   - utter_apply
 * deny
   - utter_low_risk
+
+## corona tracker path
+* corona_state
+  - action_corona_tracker
