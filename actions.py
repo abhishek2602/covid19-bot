@@ -22,9 +22,9 @@ class ActionCoronaTracker(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         
-        response = requests.get("https://api.covid19india.org/data.json")
+        response = requests.get("https://api.covid19india.org/data.json").json()
 
-        entities = tracker.latest_message('entities')
+        entities = tracker.latest_message['entities']
         print("Last message Now ", entities)
         state = None
 
