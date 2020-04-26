@@ -5,6 +5,7 @@
 - good morning
 - good evening
 - hey there
+- Hello
 
 ## intent:goodbye
 - bye
@@ -18,6 +19,7 @@
 
 ## intent:cough
 - cough
+- I had cough
 
 ## intent:shortness_of_breath
 - shortness of breath
@@ -25,6 +27,7 @@
 
 ## intent:interacted
 - I interacted with corona patient recently
+- I stay with cornona patient
 
 ## intent:examined
 - examined without protection
@@ -47,6 +50,11 @@
 - I have a doubt that I have cornona virus
 - how can I check if I am suffering from corona virus or not
 
+## intent:corona_tracker
+- I want to track cornona numbers
+- Want to know how many are infected
+- numbers
+
 ## intent:corona_state
 - [india](state)
 - [karnataka](state)
@@ -62,9 +70,8 @@
 - [tamil nadu](state)
 - [kerala](state)
 - [rajasthan](state)
-
-## synonym:total
-- india
+- [karnataka](state)
+- [punjab](state)
 
 ## intent:affirm
 - yes
@@ -108,3 +115,6 @@
 - are you a human?
 - am I talking to a bot?
 - am I talking to a human?
+
+## ('india', 'total'):total
+- india

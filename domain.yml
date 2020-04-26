@@ -1,104 +1,104 @@
+actions:
+- action_corona_tracker
+- utter_apply
+- utter_cheer_up
+- utter_did_that_help
+- utter_goodbye
+- utter_greet
+- utter_had_any
+- utter_happy
+- utter_iamabot
+- utter_low_risk
+- utter_state_name
+- utter_symptoms
+- utter_travel_14
+entities:
+- state
 intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
-  - fever
-  - cough
-  - shortness_of_breath
-  - interacted
-  - examined
-  - diabetes
-  - hypertension
-  - lung_disease
-  - heart_disease
-  - corona_test
-  - corona_state
-
+- corona_tracker
+- corona_state
+- corona_test
+- greet
+- deny
+- goodbye
+- affirm
+- mood_great
+- mood_unhappy
+- bot_challenge
+- fever
+- cough
+- shortness_of_breath
+- interacted
+- examined
+- diabetes
+- hypertension
+- lung_disease
+- heart_disease
 responses:
-  utter_greet:
-  - text: "Hey! How are you?"
-
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-  - text: "Did that help you?"
-
-  utter_happy:
-  - text: "Great, carry on!"
-
-  utter_goodbye:
-  - text: "Bye"
-
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
-
-  utter_symptoms:
-  - text: Are you experiencing any of the following symptoms?
-    buttons:
-    - payload: /fever
-      title: Fever and cough
-    - payload: /shortness_of_breath
-      title: Shortness_of_breath
+  utter_apply:
+  - buttons:
+    - payload: /interacted
+      tile: I have recently interacted or lived with someone who has tested positive
+        for corona virus.
+    - payload: /examined
+      tile: I am a healthcare worker and I examined a corona virus confirmed case
+        without protective gears.
     - payload: /deny
-      title: None of the above
-
+      tile: None of the above
+    text: Which of the following apply to you?
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_goodbye:
+  - text: Bye
+  utter_greet:
+  - buttons:
+    - payload: /corona_test
+      title: Corona Virus Self-Assesment
+    - payload: /corona_tracker
+      title: Corona Virus Tracker
+    text: "Hey! How are you?\n STAY HOME! STAY SAFE!\n I can help you with the following:"
   utter_had_any:
-  - text: 'Have you ever had any of the following:'
-    buttons:
+  - buttons:
     - payload: /diabetes
       title: Diabetes or Hypertension
     - payload: /lung_disease
       title: Lung Disease or Heart Disease
     - payload: /deny
       title: None of the above
-  
+    text: 'Have you ever had any of the following:'
+  utter_happy:
+  - text: Great, carry on!
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_low_risk:
+  - buttons:
+    - payload: /goodbye
+      tile: ok
+    text: Your infection risk is low. We recommend hat you stay at home to avoid\
+      \ any chance of exposure to the Novel Coronavirus. \nRetake he Self-Assesment\
+      \ Test if you develop symptoms or come in contact with a corona virus confirmed
+      patient.
+  utter_state_name:
+  - text: Please enter the state name
+  utter_symptoms:
+  - buttons:
+    - payload: /fever
+      title: Fever and cough
+    - payload: /shortness_of_breath
+      title: Shortness_of_breath
+    - payload: /deny
+      title: None of the above
+    text: Are you experiencing any of the following symptoms?
   utter_travel_14:
-  - text: Have you travelled anywhere internationally in last 14 days?
-    buttons:
+  - buttons:
     - payload: /affirm
       title: Yes
     - payload: /deny
       title: No
-
-  utter_apply:
-  - text: Which of the following apply to you?
-    buttons:
-    - payload: /interacted
-      tile: I have recently interacted or lived with someone who has tested positive for corona virus.
-    - payload: /examined
-      tile: I am a healthcare worker and I examined a corona virus confirmed case without protective gears.
-    - payload: /deny
-      tile: None of the above
-
-  utter_low_risk:
-  - text: 'Your infection risk is low. We recommend hat you stay at home to avoid\
-          \ any chance of exposure to the Novel Coronavirus. \nRetake he Self-Assesment\
-          \ Test if you develop symptoms or come in contact with a corona virus confirmed patient.'
-    buttons:
-    - payload: /goodbye
-      tile: ok
-
-
-actions:
-  - utter_greet
-  - utter_cheer_up
-  - utter_did_that_help
-  - utter_happy
-  - utter_goodbye
-  - utter_iamabot
-  - utter_symptoms
-  - utter_had_any
-  - utter_low_risk
-  - utter_travel_14
-  - utter_apply
-  - action_corona_tracker
-
+    text: Have you travelled anywhere internationally in last 14 days?
 session_config:
-  session_expiration_time: 60
   carry_over_slots_to_new_session: true
+  session_expiration_time: 60
