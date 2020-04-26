@@ -16,7 +16,7 @@ intents:
   - lung_disease
   - heart_disease
   - corona_test
-  - corona_state
+
 
 responses:
   utter_greet:
@@ -97,7 +97,6 @@ actions:
   - utter_low_risk
   - utter_travel_14
   - utter_apply
-  - action_corona_tracker
 
 session_config:
   session_expiration_time: 60

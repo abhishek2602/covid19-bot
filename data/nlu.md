@@ -47,22 +47,6 @@
 - I have a doubt that I have cornona virus
 - how can I check if I am suffering from corona virus or not
 
-## intent:corona_state
-- [india](state)
-- [karnataka](state)
-- [bihar](state)
-- [goa](state)
-- [punjab](state)
-- [delhi](state)
-- [chandigarh](state)
-- [assam](state)
-- [odisha](state)
-- [west bengal](state)
-- [andra pradesh](state)
-- [tamil nadu](state)
-- [kerala](state)
-- [rajasthan](state)
-
 ## synonym:total
 - india
 
