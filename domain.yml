@@ -6,16 +6,6 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
-  - fever
-  - cough
-  - shortness_of_breath
-  - interacted
-  - examined
-  - diabetes
-  - hypertension
-  - lung_disease
-  - heart_disease
-  - corona_test
   - corona_state
 
 responses:
@@ -38,52 +28,6 @@ responses:
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
 
-  utter_symptoms:
-  - text: Are you experiencing any of the following symptoms?
-    buttons:
-    - payload: /fever
-      title: Fever and cough
-    - payload: /shortness_of_breath
-      title: Shortness_of_breath
-    - payload: /deny
-      title: None of the above
-
-  utter_had_any:
-  - text: 'Have you ever had any of the following:'
-    buttons:
-    - payload: /diabetes
-      title: Diabetes or Hypertension
-    - payload: /lung_disease
-      title: Lung Disease or Heart Disease
-    - payload: /deny
-      title: None of the above
-  
-  utter_travel_14:
-  - text: Have you travelled anywhere internationally in last 14 days?
-    buttons:
-    - payload: /affirm
-      title: Yes
-    - payload: /deny
-      title: No
-
-  utter_apply:
-  - text: Which of the following apply to you?
-    buttons:
-    - payload: /interacted
-      tile: I have recently interacted or lived with someone who has tested positive for corona virus.
-    - payload: /examined
-      tile: I am a healthcare worker and I examined a corona virus confirmed case without protective gears.
-    - payload: /deny
-      tile: None of the above
-
-  utter_low_risk:
-  - text: 'Your infection risk is low. We recommend hat you stay at home to avoid\
-          \ any chance of exposure to the Novel Coronavirus. \nRetake he Self-Assesment\
-          \ Test if you develop symptoms or come in contact with a corona virus confirmed patient.'
-    buttons:
-    - payload: /goodbye
-      tile: ok
-
 
 actions:
   - utter_greet
@@ -92,11 +36,6 @@ actions:
   - utter_happy
   - utter_goodbye
   - utter_iamabot
-  - utter_symptoms
-  - utter_had_any
-  - utter_low_risk
-  - utter_travel_14
-  - utter_apply
   - action_corona_tracker
 
 session_config:
